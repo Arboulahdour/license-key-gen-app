@@ -8,13 +8,13 @@ function Process() {
 		<section className="page-section" id="about">
             <div className="container">
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Process</h2>
-                    <h3 className="section-subheading text-muted">The progress of the project with our team follows a series of well-processed steps.</h3>
+                    <h2 className="section-heading text-uppercase animate__animated animate__fadeInDown wow">Process</h2>
+                    <h3 className="section-subheading text-muted animate__animated animate__fadeInDown wow">The progress of the project with our team follows a series of well-processed steps.</h3>
                 </div>
                 <ul className="timeline">
                     <li>
-                    <div className="timeline-image"><div className="rounded-circle img-fluid"></div></div>
-                        <div className="timeline-panel">
+                    <div className="timeline-image animate__animated animate__fadeIn wow"><div className="rounded-circle img-fluid"></div></div>
+                        <div className="timeline-panel animate__animated animate__fadeInUp wow">
                             <div className="timeline-heading">
                                 <h4>First Step</h4>
                                 <h4 className="subheading">Identify Your Needs</h4>
@@ -23,8 +23,8 @@ function Process() {
                         </div>
                     </li>
                     <li className="timeline-inverted">
-                    <div className="timeline-image"><div className="rounded-circle img-fluid"></div></div>
-                        <div className="timeline-panel">
+                    <div className="timeline-image animate__animated animate__fadeIn wow"><div className="rounded-circle img-fluid"></div></div>
+                        <div className="timeline-panel animate__animated animate__fadeInUp wow">
                             <div className="timeline-heading">
                                 <h4>Second Step</h4>
                                 <h4 className="subheading">Execution, testing & performance</h4>
@@ -33,8 +33,8 @@ function Process() {
                         </div>
                     </li>
                     <li>
-                    <div className="timeline-image"><div className="rounded-circle img-fluid"></div></div>
-                        <div className="timeline-panel">
+                    <div className="timeline-image animate__animated animate__fadeIn wow"><div className="rounded-circle img-fluid"></div></div>
+                        <div className="timeline-panel animate__animated animate__fadeInUp wow">
                             <div className="timeline-heading">
                                 <h4>Third Step</h4>
                                 <h4 className="subheading">Project delivery</h4>
@@ -43,8 +43,8 @@ function Process() {
                         </div>
                     </li>
                     <li className="timeline-inverted">
-                        <div className="timeline-image"><div className="rounded-circle img-fluid"></div></div>
-                        <div className="timeline-panel">
+                        <div className="timeline-image animate__animated animate__fadeIn wow"><div className="rounded-circle img-fluid"></div></div>
+                        <div className="timeline-panel animate__animated animate__fadeInUp wow">
                             <div className="timeline-heading">
                                 <h4>Final Step</h4>
                                 <h4 className="subheading">Support and management</h4>
@@ -53,7 +53,7 @@ function Process() {
                         </div>
                     </li>
                     <li className="timeline-inverted">
-                        <div className="timeline-image">
+                        <div className="timeline-image animate__animated animate__fadeIn wow">
                             <h4>
                                 Be Part
                                 <br />

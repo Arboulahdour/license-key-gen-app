@@ -6,12 +6,12 @@ function Portfolio ({ portfolioLinks }) {
         <section className="page-section bg-light" id="portfolio">
             <div className="container">
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Portfolio</h2>
-                    <h3 className="section-subheading text-muted">Recent projects achieved by Dev Consult team.</h3>
+                    <h2 className="section-heading text-uppercase animate__animated animate__fadeInDown wow">Portfolio</h2>
+                    <h3 className="section-subheading text-muted animate__animated animate__fadeInDown wow">Recent projects achieved by Dev Consult team.</h3>
                 </div>
                 <div className="row">
                     { portfolioLinks && portfolioLinks.map(({ title, caption, dataTarget, dataTargetC, image, description, url, technologies }, index) =>
-                        <div className="col-lg-4 col-sm-6 mb-4" key={index}>
+                        <div className="col-lg-4 col-sm-6 mb-4 animate__animated animate__fadeInUp wow" key={index}>
                             <div className="portfolio-item">
                                 <a className="portfolio-link" data-toggle="modal" data-target={ dataTarget }>
                                     <div className="portfolio-hover">

@@ -12,14 +12,15 @@ import pic5 from './assets/img/portfolio/projects/pic5.jpg';
 import pic7 from './assets/img/portfolio/projects/pic7.jpg';
 import pic8 from './assets/img/portfolio/projects/pic8.jpg';
 
-import design from './assets/img/design.jpg';
+import lightbulb from './assets/img/ideas.svg';
 
 import Slides from './components/Slides';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Skills from './components/Skills';
 import Process from './components/Process';
 import FollowUs from './components/FollowUs';
+import Contact from './components/Contact';
 
 function App() {
   const portfolioLinks = [ 
@@ -160,13 +161,29 @@ function App() {
   return (
     <div className='App'>
         <a href="https://wa.me/+213796046665" className="whatsapp_float" target="_blank" style={{textDecoration: "none"}}> <i className="fa fa-whatsapp fa-1x whatsapp-icon"></i></a>
-        <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: 'white', borderBottom: '1px inset #cfcfcf',}} id="mainNav">
+        
+        <div style={{backgroundColor: "#2E5CFF", height: "40px", color: "#fff", paddingTop: "6px"}} id="top">
+          <div class="container">
+              <div class="row">
+                  <div  class="col-md-12">
+                      <div class="header-top-content">
+                          <ul class="nav nav-pills navbar-left">
+                              <li><a href="#"><i class="fa fa-phone"></i><span>+213-796046665</span></a></li>
+                              <li><a href="#"><i class="fa fa-envelope"></i><span>ar.boulahdour@outlook.com</span></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <nav id="mainNav" className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', borderBottom: '1px inset #cfcfcf',}}>
             <div className="container">
-                <a className="navbar-brand js-scroll-trigger" style={{ color: '#2E5CFF', fontWeight: 'bold' }} href="#page-top">DEV CONSULT</a>
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a className="navbar-brand js-scroll-trigger" style={{ color: '#2E5CFF', fontWeight: 'bold' }} href="#page-top">DEV <span style={{fontWeight: '500', color: '#515151'}}>CONSULT</span></a>
+                <span className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i className="fa fa-bars ml-1"></i>
-                </button>
+                </span>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item"><a className="nav-link js-scroll-trigger"  style={{color: 'black'}} href="#services">Services</a></li>
@@ -174,86 +191,49 @@ function App() {
                         <li className="nav-item"><a className="nav-link js-scroll-trigger"  style={{color: 'black'}} href="#skills">Skills</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger"  style={{color: 'black'}} href="#about">Process</a></li>
                         <li className="nav-item"><a className="nav-link js-scroll-trigger"  style={{color: 'black'}} href="#team">Follow Us</a></li>
-                        <li className="nav-item"><a className="nav-link js-scroll-trigger"  style={{color: 'black'}} href="#contact">Contact Us</a></li>
+                        <li className="nav-item"><a className="nav-link js-scroll-trigger contact-btn" style={{color: 'white'}} href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div id="page-top" style={{display: "none"}}></div>
-        <div style={{marginTop:"60px"}}> </div>
+        <div style={{marginTop:"0px"}}> </div>
         <Slides />
 
         <Services servicesLinks={servicesLinks} />       
             
         <Portfolio portfolioLinks={portfolioLinks} />
            
-        <section className="page-section" id="skills">
-            <div className="container">
-                <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Skills</h2>
-                    <h3 className="section-subheading text-muted">Find out the tools used by Dev Consult team.</h3>
-                </div>
-                <div className="row text-center">
-                    <div className="col-md-3">
-                        <span className="fa-stack fa-3x">
-                            <i className="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fa fa-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 className="my-3">Python</h4>
-                        <p className="text-muted">Python is currently one of the fastest growing languages to get your job done on time.</p>
-                    </div>
-                    <div className="col-md-3">
-                        <span className="fa-stack fa-3x">
-                            <i className="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 className="my-3">Django</h4>
-                        <p className="text-muted">Build performant backend web applications based on Python programming tool.</p>
-                    </div>
-                    <div className="col-md-3">
-                        <span className="fa-stack fa-3x">
-                            <i className="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fa fa-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 className="my-3">React.js</h4>
-                        <p className="text-muted">React implements a beautiful and responsive UIs that are highly-interactive.</p>
-                    </div>
-                    <div className="col-md-3">
-                        <span className="fa-stack fa-3x">
-                            <i className="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fa fa-mobile fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 className="my-3">React Native</h4>
-                        <p className="text-muted">React Native leverages a powerful framework for a mobile cross-platform dev.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <Skills />        
 
 
-        <div className="row no-gutters">
-      
-          <div className="col-md">
-            <div>
-              <img src={design} className="img-fluid-lo" height='100%' alt="illustaration" />
-            </div>
-          </div>
+        <div className="row no-gutters bg-light p-5">
 
-          <div className="col-md-6">
+            <div className="col-md-6 animate__animated animate__fadeInBottomLeft wow">
             
-            <div className="card bg-light" style={{height: "100%", borderRadius: "0", textAlign: "center"}}>
-              <div className="card-body text-black">
-                <i className="fa fa-lightbulb-o fa-5x"></i><br/>
-                <span className="plan-qst card-title">Do you have a plan?</span>
-                <p className="plan-request card-text">
-                  Whatever your plan, contact us to carry out your project, and simplify all your technical issues.
-                </p>
+                <div className="card bg-light card-content pr-2" style={{height: "80%", borderRadius: "0", textAlign: "left", border: '0'}}>
+                  <div className="card-body text-black">
+                    <br/>
+                    <span className="plan-qst card-title">Do you have a plan?</span>
+                    <p className="plan-request card-text">
+                      Whatever your plan, contact us to carry out your project, and simplify all your technical issues.
+                    </p>
+                    <a href="#about" className="btn btn-primary btn-img">
+                        See more <i className="fa fa-arrow-circle-down ml-1"></i>
+                    </a>
+
+                  </div>
+                </div>
+            </div>
+
+            <div className="col-md-6 pt-3 pb-3 animate__animated animate__fadeInBottomRight wow">
+              <div>
+                <img src={lightbulb} className="img-fluid-lo" alt="illustaration" />
               </div>
             </div>
-          
-          </div>
-          
+            
         </div>
+
 
         <Process />
         

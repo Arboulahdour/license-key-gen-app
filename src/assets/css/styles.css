@@ -10089,8 +10089,8 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -10099,10 +10099,7 @@ img::-moz-selection {
     font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
   }
-  #mainNav .navbar-brand img {
-    height: 2rem;
-    transition: height 0.3s ease-in-out;
-  }
+
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -10111,10 +10108,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
-  #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
-  }
+
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
   }
@@ -10179,13 +10173,18 @@ div.page-kot .container .page-kot-subheading {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  transition: 0.7s ease
 }
+
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
   cursor: pointer;
 }
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
@@ -10572,12 +10571,34 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 a.btn.btn-lg {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   border-radius: 25px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 27px;
+  padding-left: 27px;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
   transition: 0.6s ease;
+}
+
+a.btn.btn-lg:hover {
+  transform: scale(0.9);
+}
+
+
+.btn-img {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 25px;
+  padding-right: 28px;
+  padding-left: 28px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  transition: 0.7s ease;
+  color: white;
+  background: #2E5CFF;
+}
+
+.btn-img:hover {
+  color: white;
+  transform: scale(0.9);
 }
 
 /* RESPONSIVE CSS
@@ -10616,8 +10637,22 @@ a.btn.btn-lg {
     line-height: 1.4;
   }
 
-  .featurette-heading {
-    font-size: 50px;
+}
+
+@media (max-width: 420px) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .carousel-item .container .carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  .carousel-caption {
+    margin-bottom: 7px;
   }
 
 }
@@ -10627,7 +10662,7 @@ a.btn.btn-lg {
   text-decoration:none; 
   color: #0062cc;
   border:1px solid #0062cc;
-  padding: 5px;
+  padding: 7px;
   padding-left: 17px;
   padding-right: 17px;
   border-radius: 25px;
@@ -10791,17 +10826,15 @@ a.followlink.link-6:hover {
      margin-bottom: 8px;
 }
 
-
-.box-part:hover {
-  margin-top: 10px;
+@media (min-width: 550px) {
+  .box-part:hover {
+    margin-top: 10px;
+  }
 }
 
-
-
-    .fa.fa-lightbulb-o {
-      margin-top: 27px;
-      color: #F5382E;
-    }
+.card-content {
+  margin-top: 75px;
+}
 
     .plan-qst {
       font-size: 54px;
@@ -10814,11 +10847,18 @@ a.followlink.link-6:hover {
       font-family: Raleway;
     }
 
+    @media (max-width: 1125px) {
+      .card-content {
+        margin-top: 10px;
+      }      
+    }
+
     @media (max-width: 1105px) {
 
-    .fa.fa-lightbulb-o {
-      margin-top: 10px;
-    }  
+
+    .card-content {
+      margin-top: 20px;
+    }
 
     .plan-qst {
       font-size: 46px;
@@ -10833,12 +10873,31 @@ a.followlink.link-6:hover {
 
     @media (max-width: 975px) {
 
-    .fa.fa-lightbulb-o {
-      margin-top: 10px;
-    }    
+    .card-content {
+      margin-top: 6px;
+    }      
 
     .plan-qst {
-      font-size: 40px;
+      font-size: 44px;
+    }  
+
+    .plan-request {
+      font-size: 20px; 
+      letter-spacing: 2px;
+      padding-top: 4px;
+    }
+
+    }
+
+    @media (max-width: 875px) {
+
+
+    a.btn.btn-lg {
+      margin-top: 4px;
+    }
+
+    .plan-qst {
+      font-size: 42px;
     }  
 
     .plan-request {
@@ -10848,8 +10907,7 @@ a.followlink.link-6:hover {
 
     }
 
-    @media (max-width: 875px) {
-
+    @media (max-width: 845px) {
 
     .plan-qst {
       font-size: 37px;
@@ -10862,28 +10920,11 @@ a.followlink.link-6:hover {
 
     }
 
-    @media (max-width: 845px) {
-
-    .fa.fa-lightbulb-o {
-      margin-top: 5px;
-    }  
-
-    .plan-qst {
-      font-size: 31px;
-    }  
-
-    .plan-request {
-      font-size: 15px; 
-      letter-spacing: 2px;
-    }
-
-    }
-
     @media (max-width: 765px) {
 
-    .fa.fa-lightbulb-o {
-      margin-top: 20px;
-    }  
+    a.btn.btn-lg {
+      margin-top: 2px;
+    } 
 
     .plan-qst {
       font-size: 33px;
@@ -10892,11 +10933,27 @@ a.followlink.link-6:hover {
     .plan-request {
       font-size: 17px; 
       letter-spacing: 2px;
-      padding-bottom: 25px;
+      padding-bottom: 2px;
+      padding-top: 5px;
     }
 
     }
 
+    @media (max-width: 370px) {
+
+
+    .plan-qst {
+      font-size: 27px;
+    }  
+
+    .plan-request {
+      font-size: 16px; 
+      letter-spacing: 2px;
+      padding-bottom: 2px;
+      padding-top: 5px;
+    }
+
+    }
 
 
 /* for desktop */
@@ -10924,6 +10981,7 @@ a.followlink.link-6:hover {
       color: white;
       box-shadow: 2px #999;
   }
+
   /* for mobile */
   @media screen and (max-width: 767px){
     /*   .whatsapp-icon {
@@ -10937,3 +10995,61 @@ a.followlink.link-6:hover {
           font-size: 22px;
       }*/
   }
+
+
+a.nav-link.js-scroll-trigger.contact-btn {
+  border-radius: 25px;
+  background: #2E5CFF;
+  padding-right: 13px;
+  padding-left: 13px;
+  color: white;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  transition: 0.7s ease;
+}
+
+a.nav-link.js-scroll-trigger.contact-btn:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 993px) {
+  a.nav-link.js-scroll-trigger.contact-btn {
+    border-radius: 0px;
+    background: #2E5CFF;
+    padding-right: 13px;
+    padding-left: 13px;
+    color: white;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    transition: 0.7s ease;
+}
+
+  a.nav-link.js-scroll-trigger.contact-btn:hover {
+    transform: scale(1);
+  }
+}
+
+
+.btn.btn-primary.btn-xl {
+  border-radius: 37px;
+  transition: 0.7s ease;
+}
+
+.btn.btn-primary.btn-xl:hover {
+  transform: scale(0.9);
+}
+
+
+.header-top-content{}
+.header-top-content ul{}
+.header-top-content ul li{}
+.header-top-content ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 0;
+}
+
+
+.header-top-content ul li a span {
+  padding: 10px;
+}
+

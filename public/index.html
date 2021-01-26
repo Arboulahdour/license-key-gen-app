@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
    
     <title>Dev Consult</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,6 +41,25 @@
             buttonBg: '#2E5CFF' /*'#3b5998'    /* chat button background color */
         }
     };
+    </script>
+
+    <!-- Menu Fixed -->
+    
+    <script type="text/javascript">
+      ///////////////// fixed menu on scroll for desktop
+      if ($(window).width() > 992) {
+        $(window).scroll(function(){  
+           if ($(this).scrollTop() > 40) {
+              $('#mainNav').addClass("fixed-top");
+              // add padding top to show content behind navbar
+              $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            }else{
+              $('#mainNav').removeClass("fixed-top");
+               // remove padding top from body
+              $('body').css('padding-top', '0');
+            }   
+        });
+      } // end if
     </script>
 
     <!-- /Chatra {/literal} -->
@@ -79,8 +99,13 @@
     <div id="root"></div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
   </body>
 </html>

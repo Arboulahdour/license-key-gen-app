@@ -250,12 +250,12 @@ class Contact extends React.Component {
         <section className="page-section" id="contact">
             <div className="container">
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Contact Us</h2>
-                    <h3 className="section-subheading text-muted">We are extremely passionate about receiving your message.</h3>
+                    <h2 className="section-heading text-uppercase animate__animated animate__fadeInDown wow">Contact Us</h2>
+                    <h3 className="section-subheading text-muted animate__animated animate__fadeInDown wow">We are extremely passionate about receiving your message.</h3>
                 </div>
                 <form onSubmit={this.handleSubmit}  id="contactForm" name="sentMessage" noValidate method="POST">
                     <div className="row align-items-stretch mb-5">
-                        <div className="col-md-6">
+                        <div className="col-md-6 animate__animated animate__fadeInLeft wow">
                             <div className="form-group">
                                 <input onChange={this.handleChangeName} className="form-control" value={this.state.contactItem.name} name="Name" id="name" type="text" placeholder="Your Name *" required="required" />
                                 <p className="help-block text-danger">{this.state.errors.name}</p>
@@ -269,14 +269,14 @@ class Contact extends React.Component {
                                 <p className="help-block text-danger">{this.state.errors.phone}</p>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 animate__animated animate__fadeInRight wow">
                             <div className="form-group form-group-textarea mb-md-0">
                                 <textarea onChange={this.handleChangeMessage} className="form-control" value={this.state.contactItem.message} name="message" id="message" placeholder="Your Message *" required="required"></textarea>
                                 <p className="help-block text-danger">{this.state.errors.message}</p>
                             </div>
                         </div>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center animate__animated animate__fadeInUp wow">
                         <div className="alert alert-success alert-dismissible fade show" style={{display: "none"}} style={this.state.success} role="alert">
                           <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
