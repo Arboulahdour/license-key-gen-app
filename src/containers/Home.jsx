@@ -41,7 +41,7 @@ function Home() {
     }
 
     const notifyDuplicateName = () => {
-	  toast.warning("This Name is aleardy used! Please, try another name.", {
+	  toast.warning("This name is aleardy used! Please, try another name.", {
 	    autoClose: 10000
 	  });
 	}
@@ -222,7 +222,7 @@ function Home() {
 
 	const deleteKey = (keyIndex) => {
 
-	    fetch(`https://license-key-gen.herokuapp.com/license-keys-delete/${keyIndex.id}/`, {
+	    fetch(`https://license-key-gen.herokuapp.com/api/license-keys-delete/${keyIndex.id}/`, {
 	      method:'DELETE',
 	      headers:{
 	        'Content-type':'application/json',
